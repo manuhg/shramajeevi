@@ -1,72 +1,50 @@
-import { Collapse, Navbar, NavbarBrand, NavbarNav, NavbarToggler, NavItem, NavLink } from 'mdbreact';
 import React, { Component } from 'react';
-import logo from 'resources/img/agdial.png';
-import routes from 'components/Routes';
 
 class Nav extends Component {
-  constructor(props) {
-    super(props);
-    this.mounted = true;
-    this.state = { collapse: false, isWideEnough: false };
-    this.onClick = this.onClick.bind(this);
-  }
-  componentWillUnmount() {
-    this.mounted = false;
-  }
-  onClick() {
-    if (this.mounted) this.setState({ collapse: !this.state.collapse });
-  }
-
   render() {
-    this.mounted = true;
-    var actives = Array(routes.length);
-    if (typeof this.props.active === 'number' && this.props.active < actives.length) actives[this.props.active] = true;
-    else actives[0] = true;
-
-    // const externalLinks = [
-    //   ['https://shramajeewiki.com', 'Articles'],
-    //   ['https://shramajeeviimages.com', 'Images'],
-    //   ['https://www.youtube.com/user/ShramajeeviAgriFilms', 'Videos'],
-    // ];
-
     return (
-      <Navbar color="white" light expand="md">
-        {/*scrolling*/}
-        <NavbarBrand href="/">
-          <img src={logo} alt="Agdial Logo" height="80" />
-        </NavbarBrand>
-        {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
-        <Collapse isOpen={this.state.collapse} navbar>
-          <NavbarNav left>
-            {routes.map((e, i) => {
-              return actives[i] ? (
-                <NavItem active key={i}>
-                  <NavLink to={e[0]}>
-                    <strong>{e[1]}</strong>
-                  </NavLink>
-                </NavItem>
-              ) : (
-                <NavItem key={i}>
-                  <NavLink to={e[0]}>
-                    <strong>{e[1]}</strong>
-                  </NavLink>
-                </NavItem>
-              );
-            })}
-          </NavbarNav>
-          {/* <NavbarNav right>
-            {externalLinks.map((l, i) => (
-              <NavItem key={i}>
-                <NavLink to={l[0]} target="_blank" rel="noopener">
-                  <strong>{l[1]}</strong>
-                </NavLink>
-              </NavItem>
-            ))}
-          </NavbarNav> */}
-        </Collapse>
-      </Navbar>
+      <div>
+        <header>
+          {/* <div className="navbar navbar-dark bg-dark box-shadow">
+        <div className="container d-flex justify-content-between">
+          <a href="#" className="navbar-brand d-flex align-items-center md-auto">
+            <strong>Shramajeevi</strong>
+          </a>
+          <nav className="my-2 my-md-0 mr-md-3">
+        <a className="p-2 text-light" href="#">Home</a>
+        <a className="p-2 text-light" href="#">About</a>
+        <a className="p-2 text-light" href="#">Videos</a>
+        <a className="p-2 text-light" href="#">Clients</a>
+        <a className="p-2 text-light" href="#">Contact</a>
+      </nav>
+        </div>
+      </div>  */}
+
+          <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom box-shadow">
+            <div className="container d-flex justify-content-between">
+              <h5 className="text-light mr-md-auto font-weight-normal">Shramajeevi</h5>
+              <nav className="my-2 my-md-0 mr-md-3">
+                <a className="p-2 text-light" href="#h">
+                  Home
+                </a>
+                <a className="p-2 text-light" href="#a">
+                  About
+                </a>
+                <a className="p-2 text-light" href="#v">
+                  Videos
+                </a>
+                <a className="p-2 text-light" href="#c">
+                  Clients
+                </a>
+                <a className="p-2 text-light" href="#co">
+                  Contact
+                </a>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
     );
   }
 }
-
 export default Nav;
