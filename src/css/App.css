@@ -20,10 +20,10 @@ body {
 
 .soil_home {
   height: 4vh !important;
-  width: 100vw !important;
+  width: 100% !important;
   background-color: rgba(146, 87, 20, 1) !important;
   position: absolute;
-  bottom: 0px;
+  top: 96vh;
 }
 #home {
   /* background-color: rgba(146, 87, 20,1) !important; */
