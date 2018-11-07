@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'css/App.css';
+import 'css/styles.css';
 
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
@@ -24,11 +26,11 @@ class App extends Component {
         <Clients />
         <Videos />
         <Contact />
-        Hello
         <Footer />
       </div>
     );
   }
+
   updateDimensions() {
     var w = window,
       d = document,

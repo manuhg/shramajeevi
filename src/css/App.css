@@ -1,52 +1,41 @@
 body {
   padding: 0px !important;
 }
+
 .home {
-  height: 80vh;
-  background-color: rgb(146, 87, 20) !important;
+  margin-top: 2em;
+  /* height: 100vh !important; */
+  background-image: url(../img/plant.png);
+  background-position: right bottom !important;
+  background-repeat: no-repeat;
+  /* background-size: contain !important; */
 }
-:root {
-  --jumbotron-padding-y: 3rem;
+.soil_home {
+  height: 1vh !important;
+  width: 100vw !important;
+  background-color: rgba(146, 87, 20, 1) !important;
+  position: absolute;
+  bottom: 0px;
 }
-
-.jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
+#home {
+  /* background-color: rgba(146, 87, 20,1) !important; */
+  background-color: rgba(255, 255, 255, 1) !important;
 }
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
+#about {
+  /* background-color: rgba(255, 255, 255,1) !important; */
+  /* background-color: rgba(248, 167, 16,1) !important; */
+  /* background-color: rgba(29, 176, 212,1) !important; */
+  background-color: rgba(97, 172, 27, 0.7) !important;
 }
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
+#videos {
+  background-color: rgba(248, 167, 16, 1) !important;
 }
-
-.jumbotron-heading {
-  font-weight: 300;
+#clients {
+  background-color: rgba(29, 176, 212, 1) !important;
 }
-
-.jumbotron .container {
-  max-width: 40rem;
+#contact {
+  background-color: rgba(97, 172, 27, 1) !important;
 }
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: 0.25rem;
-}
-
-.box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-}
-
 a {
   text-decoration: none;
   color: blue;

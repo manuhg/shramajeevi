@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
   render() {
     return (
-      <div>
+      <section id="contact" className="section_">
         <main role="main">
           <section className="jumbotron text-center">
             <div className="container">
@@ -16,7 +16,7 @@ class Contact extends Component {
             </div>
           </section>
         </main>
-      </div>
+      </section>
     );
   }
 }

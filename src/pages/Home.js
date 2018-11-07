@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Plant from 'img/plant.png';
 //    const buttons = [
 //       ['https://shramajeevi.com', 'Shramajeevi'],
 //       ['https://www.youtube.com/user/ShramajeeviAgriFilms', 'Watch Agri Videos'],
@@ -11,12 +10,10 @@ import Plant from 'img/plant.png';
 class Home extends Component {
   render() {
     return (
-      <div>
-        <section id="home" className="home">
-          <h3>Home</h3>
-          <img src={Plant} alt="Plant" style={{ height: '50vh' }} />
-        </section>
-      </div>
+      <section id="home" className="home section_">
+        &nbsp; &nbsp;
+        <div className="soil_home">&nbsp;</div>
+      </section>
     );
   }
 }
