@@ -8,10 +8,18 @@ body {
   background-image: url(../img/plant.png);
   background-position: right bottom !important;
   background-repeat: no-repeat;
-  /* background-size: contain !important; */
+  background-size: 40vh !important;
 }
+
+@media only screen and (max-width: 425px) {
+  .home {
+    background-position: center bottom !important;
+    background-size: 40vh !important;
+  }
+}
+
 .soil_home {
-  height: 1vh !important;
+  height: 4vh !important;
   width: 100vw !important;
   background-color: rgba(146, 87, 20, 1) !important;
   position: absolute;

@@ -2,53 +2,41 @@ import React, { Component } from 'react';
 import 'css/Nav.css';
 
 class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.nav_links = [
+      ['Home', '#home'],
+      ['About', '#about'],
+      ['Videos', '#videos'],
+      ['clients', '#clients'],
+      ['Contact', '#contact'],
+    ];
+    this.r_nav = {};
+    for (var i = 0; i < this.nav_links.length; i++) this.r_nav[this.nav_links[i][1]] = i;
+
+    this.state = { active: 0 };
+    this.setActive = this.setActive.bind(this);
+  }
+  setActive(e) {
+    this.setState({ active: this.r_nav[e.target.getAttribute('href')] });
+  }
   render() {
+    const { nav_links } = this;
     return (
-      // <header>
-      //   <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom box-shadow">
-      //     <div className="container d-flex justify-content-between">
-      //       <h5 className="text-dark mr-md-auto font-weight-normal">
-      //         <strong style={{ color: 'rgb(61, 177, 8)' }}>Shramajeevi</strong>
-      //       </h5>
-      //       <nav className="my-2 my-md-0 mr-md-3">
-      //         <a className="p-2 text-light" href="#h">
-      //           Home
-      //         </a>
-      //         <a className="p-2 text-light" href="#a">
-      //           About
-      //         </a>
-      //         <a className="p-2 text-light" href="#v">
-      //           Videos
-      //         </a>
-      //         <a className="p-2 text-light" href="#c">
-      //           Clients
-      //         </a>
-      //         <a className="p-2 text-light" href="#co">
-      //           Contact
-      //         </a>
-      //       </nav>
-      //     </div>
-      //   </div>
-      // </header>
       <header id="nav_bar" className="masthead bg-dark mb-auto fixed-top">
         <div className="inner">
           <h3 className="masthead-brand text-light text-center navbrand_color">Shramajeevi</h3>
           <nav className="nav nav-masthead justify-content-center">
-            <a className="nav-link text-light active" href="#home">
-              Home
-            </a>
-            <a className="nav-link text-light" href="#about">
-              About
-            </a>
-            <a className="nav-link text-light" href="#videos">
-              Videos
-            </a>
-            <a className="nav-link text-light" href="#clients">
-              Clients
-            </a>
-            <a className="nav-link text-light" href="#contact">
-              Contact
-            </a>
+            {this.nav_links.map((e, i) => (
+              <a
+                key={i}
+                onClick={e => this.setActive(e)}
+                className={'nav-link text-light ' + (this.state.active === i ? 'active' : '')}
+                href={nav_links[i][1]}
+              >
+                {nav_links[i][0]}
+              </a>
+            ))}
           </nav>
         </div>
       </header>
@@ -56,17 +44,3 @@ class Nav extends Component {
   }
 }
 export default Nav;
-/* <div className="navbar navbar-dark bg-dark box-shadow">
-        <div className="container d-flex justify-content-between">
-          <a href="#" className="navbar-brand d-flex align-items-center md-auto">
-            <strong>Shramajeevi</strong>
-          </a>
-          <nav className="my-2 my-md-0 mr-md-3">
-        <a className="p-2 text-light" href="#">Home</a>
-        <a className="p-2 text-light" href="#">About</a>
-        <a className="p-2 text-light" href="#">Videos</a>
-        <a className="p-2 text-light" href="#">Clients</a>
-        <a className="p-2 text-light" href="#">Contact</a>
-      </nav>
-        </div>
-      </div>  */

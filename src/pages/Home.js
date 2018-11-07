@@ -11,8 +11,7 @@ class Home extends Component {
   render() {
     return (
       <section id="home" className="home section_">
-        &nbsp; &nbsp;
-        <div className="soil_home">&nbsp;</div>
+        <div className="soil_home"> </div>
       </section>
     );
   }
