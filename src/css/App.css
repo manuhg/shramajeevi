@@ -2,28 +2,12 @@ body {
   padding: 0px !important;
 }
 
-.home {
-  margin-top: 2em;
-  /* height: 100vh !important; */
-  background-image: url(../img/plant.png);
-  background-position: right bottom !important;
-  background-repeat: no-repeat;
-  background-size: 40vh !important;
-}
-
-@media only screen and (max-width: 425px) {
-  .home {
-    background-position: center bottom !important;
-    background-size: 40vh !important;
-  }
-}
-
 .soil_home {
-  height: 4vh !important;
+  height: 4% !important;
   width: 100% !important;
   background-color: rgba(146, 87, 20, 1) !important;
   position: absolute;
-  top: 96vh;
+  top: 96%;
 }
 #home {
   /* background-color: rgba(146, 87, 20,1) !important; */
@@ -61,6 +45,7 @@ body {
 .fp {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .fc {
   justify-self: center;
@@ -91,5 +76,23 @@ body {
 @media only screen and (max-width: 600px) {
   .pt {
     font-size: 60%;
+  }
+}
+
+.home {
+  margin-top: 2em;
+  /* height: 100vh !important; */
+  background-image: url(../img/plant.png);
+  background-position: right bottom !important;
+  background-repeat: no-repeat;
+  background-size: 40vh !important;
+  color: black !important;
+  height: 100vh !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .home {
+    background-position: center bottom !important;
+    background-size: 40vh !important;
   }
 }

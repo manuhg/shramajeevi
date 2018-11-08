@@ -1,10 +1,49 @@
 .section_ {
   padding: 0px;
   margin: 0px;
-  min-height: 100vh !important;
+  min-height: 80vh !important;
 }
-@media (min-width: 768px) {
+/* .round_border {
+  border-radius: 50%;
+  border: 2px solid black;
+} */
+.home_icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
+.home_icon_col {
+  margin: 20px;
+}
+.home_icon > h1 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.wiki_logo {
+  background-color: green;
+  color: white;
+}
+
+.shramimgs_logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: green;
+  color: black;
+}
+a {
+  text-decoration: none !important;
+}
+/* .icondiv
+{
+;
+} */
+
+/* @media (min-width: 768px) {
+} */
 :root {
   --jumbotron-padding-y: 3rem;
 }

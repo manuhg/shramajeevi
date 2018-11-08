@@ -12,7 +12,6 @@ class About extends Component {
               <br />
               <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h1 className="display-4">About</h1>
-                <h3> Who we are:</h3>
               </div>
             </div>
           </div>

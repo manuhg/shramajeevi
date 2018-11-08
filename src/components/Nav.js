@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
+import Pages from 'Pages.js';
 import 'css/Nav.css';
 
 class Nav extends Component {
   constructor(props) {
     super(props);
-    this.nav_links = [
-      ['Home', '#home'],
-      ['About', '#about'],
-      ['Videos', '#videos'],
-      ['clients', '#clients'],
-      ['Contact', '#contact'],
-    ];
+    this.nav_links = Pages;
     this.r_nav = {};
-    for (var i = 0; i < this.nav_links.length; i++) this.r_nav[this.nav_links[i][1]] = i;
+    for (var i = 0; i < this.nav_links.length; i++) this.r_nav['#' + this.nav_links[i][1]] = i;
 
-    this.state = { active: 0 };
+    // this.state = { active: 0 };
+    this.state = { active: 56 };
     this.setActive = this.setActive.bind(this);
   }
   setActive(e) {
@@ -30,9 +26,9 @@ class Nav extends Component {
             {this.nav_links.map((e, i) => (
               <a
                 key={i}
-                onClick={e => this.setActive(e)}
+                // onClick={e => this.setActive(e)}
                 className={'nav-link text-light ' + (this.state.active === i ? 'active' : '')}
-                href={nav_links[i][1]}
+                href={'#' + nav_links[i][1]}
               >
                 {nav_links[i][0]}
               </a>
