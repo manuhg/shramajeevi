@@ -15,48 +15,52 @@ class Home extends Component {
     return (
       <section id="home" className="home section_">
         <div className="soil_home" />
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+        <div className="fp" style={{ height: '100%' }}>
           <div className="container text-center">
             <div className="row">
               <div className="col-12 text-center mzpz">
-                <h1>Online Platform for Agriculture</h1>
+                <h1>Digital Platform for Agriculture</h1>
               </div>
             </div>
-            <div className="row">
-              <div className="col-2 col-sm-3" />
-              <div className="col-2 offset-1">
-                <a href="https://agdial.in">
-                  <div className="home_icon">
-                    <img src={agdial} alt="AgDial" />
+            <div style={{ width: '100%' }} className="row fp">
+              <div className="col-md-8">
+                <div className="container text-center">
+                  <div className="row">
+                    <div className="col-2 fcc offset-1">
+                      <a target="_blank" rel="noopener noreferrer" href="https://agdial.in">
+                        <div className="home_icon">
+                          <img src={agdial} alt="AgDial" />
+                        </div>
+                      </a>
+                    </div>
+                    <div className="col-2 fcc offset-1">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.youtube.com/user/ShramajeeviAgriFilms"
+                      >
+                        <div className="home_icon">
+                          <img src={youtube} alt="Shramajeevi on Yotutube" />
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="col-2 fcc offset-1">
+                      <a target="_blank" rel="noopener noreferrer" href="https://shramajeeviimages.com">
+                        <div className="home_icon shramimgs_logo">
+                          <h1>I</h1>
+                        </div>
+                      </a>
+                    </div>
+                    <div className="col-2 fcc offset-1">
+                      <a target="_blank" rel="noopener noreferrer" href="https://shramajeewiki.com">
+                        <div className="home_icon wiki_logo">
+                          <h1>W</h1>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </a>
-              </div>
-              <div className="col-2 offset-1">
-                <a href="https://www.youtube.com/user/ShramajeeviAgriFilms">
-                  <div className="home_icon">
-                    <img src={youtube} alt="Shramajeevi on Yotutube" />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12" />
-            </div>
-            <div className="row">
-              <div className="col-2 col-sm-3" />
-              <div className="col-2 offset-1">
-                <a href="https://shramajeeviimages.com">
-                  <div className="home_icon shramimgs_logo">
-                    <h1>I</h1>
-                  </div>
-                </a>
-              </div>
-              <div className="col-2 offset-1">
-                <a href="https://shramajeewiki.com">
-                  <div className="home_icon wiki_logo">
-                    <h1>W</h1>
-                  </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
