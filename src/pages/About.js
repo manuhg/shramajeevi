@@ -7,9 +7,7 @@ class About extends Component {
         <div className="container-fluid text-center">
           <div className="row">
             <div className="col-12">
-              <br />
-              <br />
-              <br />
+              <br /> <br />
               <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h1 className="display-4">About</h1>
               </div>
@@ -35,19 +33,18 @@ class About extends Component {
                 Agricultural Universities, Government Departments and Boards, NGOs, Companies and others. Shramajeevi
                 has an in-house team of agricultural media professionals for writing scripts, translation, voice over
                 and other production works of visual media. We do work for general Audio-Visual projects as well. In the
-                year 2016, Shramajeevi has launched an exclusive image website
+                year 2016, Shramajeevi has launched an exclusive image website{' '}
                 <a href="https://shramajeeviimages.com">shramajeeviimages.com</a> for free download of agricultural and
                 rural images and <a href="https://shramajeevicontacts.com">shramajeevicontacts.com</a> a digital
                 directory for agriculture. In the year 2017, we have brought out another website{' '}
                 <a href="">shramajeewiki.com</a> for knowledgeable articles on agriculture. In June 2018 we have
                 launched the business version of agriculture digital directory as{' '}
                 <a href="https://agdial.in">agdial.in</a>. In near future Shramajeevi is getting in to E-commerce
-                business exclusive for agriculture with
-                <a href="https://agtrade.in">agtrade.in</a>. Shramajeevi is lead by its Founder and CMD DR. Venkatramana
-                Hegde. He is basically a farmer, an agriculture graduate, writer and visual media professional. Earlier
-                he worked for ETV Kannada Annadata as program head at RFC, Hyderabad. Later with Kasturi TV Bengaluru as
-                nonfiction producer. Now DR. Hegde, as CMD, looks after all agricultural technical issues at Shramajeevi
-                for all its projects.
+                business exclusive for agriculture with <a href="https://agtrade.in">agtrade.in</a>. Shramajeevi is lead
+                by its Founder and CMD DR. Venkatramana Hegde. He is basically a farmer, an agriculture graduate, writer
+                and visual media professional. Earlier he worked for ETV Kannada Annadata as program head at RFC,
+                Hyderabad. Later with Kasturi TV Bengaluru as nonfiction producer. Now DR. Hegde, as CMD, looks after
+                all agricultural technical issues at Shramajeevi for all its projects.
               </p>
             </div>
           </div>

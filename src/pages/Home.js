@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import agdial from 'img/agdial.png';
-import youtube from 'img/youtube.png';
+import logo from 'img/logo.png';
+// import agdial from 'img/agdial.png';
+// import youtube from 'img/youtube.png';
 
 //       ['https://video.shramajeevi.com', 'Buy Agri Videos'],
 // const links = [
@@ -13,16 +14,18 @@ import youtube from 'img/youtube.png';
 class Home extends Component {
   render() {
     return (
-      <section id="home" className="home section_">
-        <div className="soil_home" />
+      <section id="home" className="home">
+        {/* <div className="soil_home" /> */}
         <div className="fp" style={{ height: '100%' }}>
           <div className="container text-center">
             <div className="row">
               <div className="col-12 text-center mzpz">
-                <h1>Digital Platform for Agriculture</h1>
+                <img src={logo} style={{ height: '120px' }} alt="Shramajeevi" />
+                <h2>Digital Platform for Agriculture</h2>
+                <h5>Since 2004</h5>
               </div>
             </div>
-            <div style={{ width: '100%' }} className="row fp">
+            {/* <div style={{ width: '100%' }} className="row fp">
               <div className="col-md-8">
                 <div className="container text-center">
                   <div className="row">
@@ -63,6 +66,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+           */}
           </div>
         </div>
       </section>

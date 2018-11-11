@@ -10,8 +10,14 @@ class Nav extends Component {
     for (var i = 0; i < this.nav_links.length; i++) this.r_nav['#' + this.nav_links[i][1]] = i;
 
     // this.state = { active: 0 };
-    this.state = { active: 56 };
+    this.state = { active: 56, toggle: false };
+    this.toggle = this.toggle.bind(this);
+    this.toggle_flag = false;
     this.setActive = this.setActive.bind(this);
+  }
+  toggle() {
+    this.toggle_flag = !this.toggle_flag;
+    document.getElementById('navbarshram').style.display = this.toggle_flag ? 'block' : 'none';
   }
   setActive(e) {
     this.setState({ active: this.r_nav[e.target.getAttribute('href')] });
@@ -19,22 +25,34 @@ class Nav extends Component {
   render() {
     const { nav_links } = this;
     return (
-      <header id="nav_bar" className="masthead bg-dark mb-auto fixed-top">
-        <div className="inner">
-          <h3 className="masthead-brand text-light text-center navbrand_color">Shramajeevi</h3>
-          <nav className="nav nav-masthead justify-content-center">
-            {this.nav_links.map((e, i) => (
-              <a
-                key={i}
-                // onClick={e => this.setActive(e)}
-                className={'nav-link text-light ' + (this.state.active === i ? 'active' : '')}
-                href={'#' + nav_links[i][1]}
-              >
-                {nav_links[i][0]}
-              </a>
-            ))}
-          </nav>
-        </div>
+      <header>
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="/">
+              Shramajeevi
+            </a>
+            <button className="navbar-toggler" type="button" onClick={this.toggle} aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon" />
+            </button>
+
+            <div className="collapse collapse_sh navbar-collapse justify-content" id="navbarshram">
+              <ul className="navbar-nav ml-auto">
+                {this.nav_links.map((e, i) => (
+                  <li key={i} className={'nav-item  ' + (this.state.active === i ? 'active' : '')}>
+                    <a
+                      key={i}
+                      onClick={this.toggle}
+                      className={'nav-link text-light ' + (this.state.active === i ? 'active' : '')}
+                      href={'#' + nav_links[i][1]}
+                    >
+                      {nav_links[i][0]}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
     );
   }

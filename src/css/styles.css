@@ -1,3 +1,30 @@
+.home {
+  margin-top: 2em;
+  padding: 0px;
+  margin: 0px;
+  /* height: 100vh !important; */
+  background-image: url(../img/plant.png);
+  background-position: right bottom !important;
+  background-repeat: no-repeat;
+  background-size: 200px !important;
+  /* background-size: 40vh !important; */
+  color: brown !important;
+  /* height: 600px !important; */
+  height: 75vh !important;
+  /* background-color: rgba(146, 87, 20,1) !important; */
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    /* background-position: center bottom !important; */
+  }
+}
+#collapse_sh {
+  display: none;
+  transition: display 5s;
+}
+
 .section_ {
   padding: 0px;
   margin: 0px;
@@ -45,7 +72,7 @@ a {
 
 /* @media (min-width: 768px) {
 } */
-:root {
+/* :root {
   --jumbotron-padding-y: 3rem;
 }
 
@@ -85,4 +112,4 @@ footer p {
 
 .box-shadow {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-}
+} */
