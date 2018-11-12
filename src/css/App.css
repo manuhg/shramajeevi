@@ -1,6 +1,13 @@
 body {
   padding: 0px !important;
 }
+.ft {
+  /* background-color: azure !important; */
+}
+.text-muted_w,
+.jumbotron_w {
+  color: white !important;
+}
 
 .soil_home {
   height: 16px !important;
@@ -28,11 +35,12 @@ body {
   background-color: rgba(29, 176, 212, 1) !important;
 }
 #contact {
+  min-height: 35vh !important;
   background-color: rgba(97, 172, 27, 1) !important;
 }
 a {
   text-decoration: none;
-  color: blue;
+  color: inherit !important;
 }
 body {
   word-wrap: break-word !important;

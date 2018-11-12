@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import titles from 'Titles';
+import playlists from 'Playlists';
 class Videos extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +15,7 @@ class Videos extends Component {
   render() {
     const currentIndex = this.state.langIndex;
     const currentLanguage = this.languages[currentIndex];
+    var playlist = playlists[currentLanguage];
     return (
       <section id="videos" className="section_">
         <div className="album py-5 bg-light">
@@ -52,10 +54,16 @@ class Videos extends Component {
               {titles[currentLanguage].map((e, i) => (
                 <div key={i} className="py-2 col-4 col-md-3 col-lg-2 text-center">
                   <div style={{ borderRadius: '0' }} className="card mb-4 box-shadow">
-                    <img className="card-img-top" src={e[0]} alt={e[1]} />
-                    <div className="card-body">
-                      <p className="card-text text-center">{e[1]}</p>
-                    </div>
+                    <a
+                      href={'https://www.youtube.com/watch?v=' + e[2] + '&list=' + playlist}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img className="card-img-top" src={e[0]} alt={e[1]} />
+                      <div className="card-body">
+                        <p className="card-text text-center">{e[1]}</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               ))}

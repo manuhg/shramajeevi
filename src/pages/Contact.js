@@ -5,14 +5,25 @@ class Contact extends Component {
     return (
       <section id="contact" className="section_">
         <main role="main">
-          <section className="jumbotron text-center">
-            <div className="container">
-              <h1 className="jumbotron-heading">Contact</h1>
-              <p className="lead text-muted">
-                Something short and leading about the collection below—its contents, the creator, etc. Make it short and
-                sweet, but not too short so folks don't simply skip over it entirely.
-              </p>
-              <p>hey there! screw you</p>
+          <section className="jumbotron_w">
+            <div className="container  text-center">
+              <div className="row">
+                <div className="col-12">
+                  <h1 className="jumbotron-heading">Contact</h1>
+                  <h5> You can reach us at:</h5>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-8 offset-md-2">
+                  <p className="lead text-muted_w">
+                    Shramajeevi, # 009, Shrinilayam 3, Near Bandematha, Kommaghatta Main Road, Kengeri Satellite Town,
+                    Bengaluru 560060, Karnataka, India. <br />
+                    Mob: +91 9980534320.
+                    <br /> Email:
+                    <a href="mailto:team@shramajeeevi.com">team@shramajeeevi.com</a>
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </main>
