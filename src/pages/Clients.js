@@ -1,34 +1,32 @@
 import React, { Component } from 'react';
-
+import clients from 'Clientele';
 class Footer extends Component {
   render() {
     return (
       <section id="clients" className="section_">
         <div className="album py-5 bg-light">
+          <br />
+          <br />
           <div className="container">
             <div className="row">
-              <div className="col-md-4">
-                <div className="card mb-4 box-shadow">
-                  <img className="card-img-top" src="" alt="Card" />
-                  <div className="card-body">
-                    <p className="card-text">
-                      This is a wider card with supporting text below as a natural lead-in to additional content. This
-                      content is a little bit longer.
-                    </p>
-                    <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
-                        <button type="button" className="btn btn-sm btn-outline-secondary">
-                          View
-                        </button>
-                        <button type="button" className="btn btn-sm btn-outline-secondary">
-                          Edit
-                        </button>
-                      </div>
-                      <small className="text-muted">9 mins</small>
-                    </div>
+              <div className="col-12 text-center">
+                <h1>Our Clients</h1>
+                <br />
+              </div>
+            </div>
+            <div className="row">
+              {clients.map((e, i) => (
+                <div key={i} className="py-2 col-4 col-md-2 col-lg-2 text-center">
+                  <div style={{ borderRadius: '50' }} className="card mb-4 box-shadow">
+                    <a href={e[3]} target="_blank" rel="noopener noreferrer">
+                      <img className="card-img-top" src={e[0]} alt={e[1]} />
+                      {/* <div className="card-body">
+                        <p className="card-text text-center">{e[1]}</p>
+                      </div> */}
+                    </a>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

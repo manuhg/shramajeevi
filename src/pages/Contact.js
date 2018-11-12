@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Contact extends Component {
   render() {
     return (
-      <section id="contact" className="section_">
+      <section style={{ borderTop: '15px solid rgba(73, 141, 10,1)' }} id="contact" className="section_">
         <main role="main">
-          <section className="jumbotron_w">
+          <section className="jumbotron">
             <div className="container  text-center">
               <div className="row">
                 <div className="col-12">
@@ -15,7 +15,7 @@ class Contact extends Component {
               </div>
               <div className="row">
                 <div className="col-md-8 offset-md-2">
-                  <p className="lead text-muted_w">
+                  <p>
                     Shramajeevi, # 009, Shrinilayam 3, Near Bandematha, Kommaghatta Main Road, Kengeri Satellite Town,
                     Bengaluru 560060, Karnataka, India. <br />
                     Mob: +91 9980534320.

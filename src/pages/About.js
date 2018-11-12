@@ -15,7 +15,7 @@ class About extends Component {
           </div>
           <div className="row">
             <div className="col-10 offset-1 text-justify">
-              <p className="lead">
+              <p>
                 SHRAMAJEEVI is a Visual Media Production House Dedicated to Agriculture Produces educative-technical
                 agricultural Documentaries, Corporate films and Ads Has websites providing services to farming community
                 Shramajeevi is basically a visual media production house dedicated to agriculture. It was established in

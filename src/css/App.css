@@ -26,17 +26,30 @@ body {
   /* background-color: rgba(255, 255, 255,1) !important; */
   /* background-color: rgba(248, 167, 16,1) !important; */
   /* background-color: rgba(29, 176, 212,1) !important; */
-  background-color: rgba(97, 172, 27, 0.7) !important;
+  color: white;
+  font-size: 1.1em;
+  background-color: rgb(73, 141, 10) !important;
 }
 #videos {
-  background-color: rgba(248, 167, 16, 1) !important;
+  /* background-color: rgba(230, 148, 255, 0.2) !important; */
+  /* color:rgb(218, 234, 165); */
+  background: linear-gradient(rgba(218, 234, 165, 0.3), rgba(218, 234, 165, 0.3)), url('../img/sunflower.jpg') no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+}
+.btngrp_langs {
+  border: 1px solid black !important;
+  box-shadow: none !important;
+}
+.title_portion {
+  color: white !important;
 }
 #clients {
-  background-color: rgba(29, 176, 212, 1) !important;
+  /* background-color: rgba(29, 176, 212, 1) !important; */
 }
 #contact {
   min-height: 35vh !important;
-  background-color: rgba(97, 172, 27, 1) !important;
+  /* background-color: rgba(97, 172, 27, 1) !important; */
 }
 a {
   text-decoration: none;
@@ -103,5 +116,55 @@ body {
 @media only screen and (max-width: 600px) {
   .pt {
     font-size: 60%;
+  }
+}
+
+.vid_captions {
+  font-size: 0.9em;
+}
+.kahi {
+  font-size: 1.2em;
+}
+
+@media (max-width: 1200px) {
+  /* .vid_captions {
+    font-size: .8em;
+  }
+  .kahi {
+    font-size: .8em;
+  } */
+}
+/* @media (max-width: 992px) {
+  .vid_captions {
+    font-size: 1.2em;
+  }
+  .kahi {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .vid_captions {
+    font-size: 1.4em;
+  }
+  .kahi {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 576px) {
+  .vid_captions {
+    font-size: 1em;
+  }
+  .kahi {
+    font-size: 1.2em;
+  }
+} */
+@media (max-width: 400px) {
+  .vid_captions {
+    font-size: 0.9em;
+  }
+  .kahi {
+    font-size: 1.1em;
   }
 }

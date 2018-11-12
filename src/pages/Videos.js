@@ -18,8 +18,19 @@ class Videos extends Component {
     var playlist = playlists[currentLanguage];
     return (
       <section id="videos" className="section_">
-        <div className="album py-5 bg-light">
+        <br />
+        <div className="album py-5 ">
+          {/* bg-light  */}
           <div className="container-fluid">
+            <div className="row">
+              <div className="col-12 text-center text-white">
+                <h1 className="title_portion">
+                  <strong>Our Videos</strong>
+                </h1>
+              </div>
+            </div>
+            <br />
+
             <div className="row text-center">
               <div className="col-12 fp">
                 <div style={{ padding: '5px' }} className="btn-group" role="group" aria-label="Basic example">
@@ -27,7 +38,7 @@ class Videos extends Component {
                     id="english"
                     onClick={e => this.setLanguageIndex(0)}
                     type="button"
-                    className={'btn btn-primary btn-' + (currentIndex !== 0 ? 'outline-' : '') + 'info'}
+                    className={'btn btn-primary btngrp_langs btn-' + (currentIndex !== 0 ? 'warning' : 'success')}
                   >
                     English
                   </button>
@@ -35,7 +46,7 @@ class Videos extends Component {
                     id="kannada"
                     onClick={e => this.setLanguageIndex(1)}
                     type="button"
-                    className={'btn btn-primary btn-' + (currentIndex !== 1 ? 'outline-' : '') + 'info'}
+                    className={'btn btn-primary btngrp_langs btn-' + (currentIndex !== 1 ? 'warning' : 'success')}
                   >
                     <h4>ಕನ್ನಡ</h4>
                   </button>
@@ -43,7 +54,7 @@ class Videos extends Component {
                     id="hindi"
                     onClick={e => this.setLanguageIndex(2)}
                     type="button"
-                    className={'btn btn-primary btn-' + (currentIndex !== 2 ? 'outline-' : '') + 'info'}
+                    className={'btn btn-primary btngrp_langs btn-' + (currentIndex !== 2 ? 'warning' : 'success')}
                   >
                     <h4>हिंदी</h4>
                   </button>
@@ -60,8 +71,10 @@ class Videos extends Component {
                       rel="noopener noreferrer"
                     >
                       <img className="card-img-top" src={e[0]} alt={e[1]} />
-                      <div className="card-body">
-                        <p className="card-text text-center">{e[1]}</p>
+                      <div style={{ padding: '5px' }}>
+                        <p className={'card-text text-center vid_captions' + (currentIndex !== 0 ? ' kahi ' : '')}>
+                          {e[1]}
+                        </p>
                       </div>
                     </a>
                   </div>

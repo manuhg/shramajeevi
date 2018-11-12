@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Pages from 'Pages.js';
 import 'css/Nav.css';
-
+import logo from 'img/logo.png';
+var navimg = false;
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -28,8 +29,11 @@ class Nav extends Component {
       <header>
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
-              Shramajeevi
+            <a className="navbar-brand text-white" href="/">
+              <h3>
+                {navimg ? <img src={logo} style={{ height: '40px' }} alt="Shramajeevi" /> : <span />}
+                Shramajeevi
+              </h3>
             </a>
             <button className="navbar-toggler" type="button" onClick={this.toggle} aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
@@ -42,7 +46,7 @@ class Nav extends Component {
                     <a
                       key={i}
                       onClick={this.toggle}
-                      className={'nav-link text-light ' + (this.state.active === i ? 'active' : '')}
+                      className={'nav-link text-white ' + (this.state.active === i ? 'active' : '')}
                       href={'#' + nav_links[i][1]}
                     >
                       {nav_links[i][0]}
