@@ -4,35 +4,13 @@ body {
 .ft {
   /* background-color: azure !important; */
 }
-.text-muted_w,
-.jumbotron_w {
-  color: white !important;
-}
 
-.soil_home {
-  height: 16px !important;
-  /* height: 4% !important; */
-  width: 100% !important;
-  background-color: rgba(146, 87, 20, 1) !important;
-  position: absolute;
-  /* top: 96%; */
-  top: 484px !important;
-}
-#home {
-  /* background-color: rgba(146, 87, 20,1) !important; */
-  /* background-color: rgba(255, 255, 255, 1) !important; */
-}
 #about {
-  /* background-color: rgba(255, 255, 255,1) !important; */
-  /* background-color: rgba(248, 167, 16,1) !important; */
-  /* background-color: rgba(29, 176, 212,1) !important; */
   color: white;
   font-size: 1.1em;
   background-color: rgb(73, 141, 10) !important;
 }
 #videos {
-  /* background-color: rgba(230, 148, 255, 0.2) !important; */
-  /* color:rgb(218, 234, 165); */
   background: linear-gradient(rgba(218, 234, 165, 0.3), rgba(218, 234, 165, 0.3)), url('../img/sunflower.jpg') no-repeat;
   background-size: cover;
   background-position: right bottom;
@@ -44,9 +22,7 @@ body {
 .title_portion {
   color: white !important;
 }
-#clients {
-  /* background-color: rgba(29, 176, 212, 1) !important; */
-}
+
 #contact {
   min-height: 35vh !important;
   /* background-color: rgba(97, 172, 27, 1) !important; */
@@ -69,8 +45,7 @@ body {
 }
 @media only screen and (max-width: 1199px) {
   .fcc {
-    padding: 0px !important;
-    /* flex: 1 1 auto; */
+    margin: 5px;
   }
   /* .fop {
     display: flex;
@@ -167,4 +142,24 @@ body {
   .kahi {
     font-size: 1.1em;
   }
+}
+
+.agdt {
+  font-size: 1em;
+}
+@media (max-width: 637px) {
+  .agdt {
+    font-size: 0.87em !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .agdt {
+    font-size: 1em;
+  }
+}
+
+.tdtxt {
+  padding: 5px;
+  text-align: left;
 }

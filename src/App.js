@@ -4,6 +4,7 @@ import 'css/styles.css';
 
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
+import Sidebar from 'components/Sidebar';
 
 import Home from 'pages/Home';
 import About from 'pages/About';
@@ -22,6 +23,7 @@ class App extends Component {
       <div>
         <Nav />
         <Home />
+        <Sidebar />
         <About />
         <Clients />
         <Videos />

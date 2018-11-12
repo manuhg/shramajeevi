@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from 'img/logo.png';
 
-// import agdial from 'img/agdial.png';
-// import youtube from 'img/youtube.png';
+import agdial from 'img/agdial.png';
+import youtube from 'img/youtube.png';
 
 //       ['https://video.shramajeevi.com', 'Buy Agri Videos'],
 // const links = [
@@ -26,18 +26,18 @@ class Home extends Component {
                 <h5>Since 2004</h5>
               </div>
             </div>
-            {/* <div style={{ width: '100%' }} className="row fp">
-              <div className="col-md-8">
+            {/*<div style={{ width: '100%' }} className="row fp">
+              <div className="col-md-10 offset-md-6">
                 <div className="container text-center">
                   <div className="row">
-                    <div className="col-2 fcc offset-1">
+                    <div className="col-4 mzpz fcc">
                       <a target="_blank" rel="noopener noreferrer" href="https://agdial.in">
                         <div className="home_icon">
                           <img src={agdial} alt="AgDial" />
                         </div>
                       </a>
                     </div>
-                    <div className="col-2 fcc offset-1">
+                    <div className="col-4 mzpz fcc">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -48,15 +48,16 @@ class Home extends Component {
                         </div>
                       </a>
                     </div>
-
-                    <div className="col-2 fcc offset-1">
+                  </div>
+                  <div className="row">
+                    <div className="col-4 mzpz fcc">
                       <a target="_blank" rel="noopener noreferrer" href="https://shramajeeviimages.com">
                         <div className="home_icon shramimgs_logo">
                           <h1>I</h1>
                         </div>
                       </a>
                     </div>
-                    <div className="col-2 fcc offset-1">
+                    <div className="col-4 mzpz fcc">
                       <a target="_blank" rel="noopener noreferrer" href="https://shramajeewiki.com">
                         <div className="home_icon wiki_logo">
                           <h1>W</h1>
@@ -67,7 +68,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-           */}
+         */}
           </div>
         </div>
       </section>
