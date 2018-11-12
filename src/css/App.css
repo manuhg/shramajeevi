@@ -144,16 +144,36 @@ body {
   }
 }
 
-.agdt {
-  font-size: 1em;
-}
-@media (max-width: 637px) {
-  .agdt {
-    font-size: 0.87em !important;
+@media (max-width: 380px) {
+  .vid_captions {
+    font-size: 0.65em;
+  }
+  .kahi {
+    font-size: 0.8em;
   }
 }
 
-@media (max-width: 576px) {
+.agdt {
+  font-size: 1em;
+}
+
+@media (max-width: 847px) {
+  .agdt {
+    font-size: 0.85em !important;
+  }
+}
+@media (max-width: 765px) {
+  .agdt {
+    font-size: 1em !important;
+  }
+}
+@media (max-width: 687px) {
+  .agdt {
+    font-size: 0.85em !important;
+  }
+}
+
+@media (max-width: 567px) {
   .agdt {
     font-size: 1em;
   }

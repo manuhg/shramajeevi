@@ -37,7 +37,7 @@
 
 .sidebar {
   min-height: 35vh !important;
-  background-color: rgb(27, 25, 25);
+  background-color: rgba(144, 96, 51, 0.76);
   /* position: fixed;
   width: 8vw !important;
   background-color: white;
