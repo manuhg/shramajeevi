@@ -10,7 +10,8 @@ class Contact extends Component {
               <div className="row">
                 <div className="col-12">
                   <h1 className="jumbotron-heading">Contact</h1>
-                  <h5> You can reach us at:</h5>
+                  <br />
+                  {/* <h5> You can reach us at:</h5> */}
                 </div>
               </div>
               <div className="row">
