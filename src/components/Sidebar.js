@@ -53,7 +53,7 @@ class Sidebar extends Component {
                             <img src={youtube} alt="Shramajeevi on Yotutube" />
                           </div>
                         </td>
-                        <td className="tdtxt">Shramajeevi on youtube</td>
+                        <td className="tdtxt">Shramajeevi on YouTube</td>
                       </tr>
                     </tbody>
                   </table>
@@ -89,7 +89,7 @@ class Sidebar extends Component {
                             <h1>W</h1>
                           </div>
                         </td>
-                        <td className="tdtxt">ShramajeeWiki</td>
+                        <td className="tdtxt">Shramajeevi Wiki</td>
                       </tr>
                     </tbody>
                   </table>
