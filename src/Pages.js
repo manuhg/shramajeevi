@@ -1,8 +1,8 @@
 const Pages = [
   ['Home', 'home'],
   ['About', 'about'],
-  ['Videos', 'videos'],
   ['Clients', 'clients'],
+  ['Videos', 'videos'],
   ['Contact', 'contact'],
 ];
 export default Pages;
