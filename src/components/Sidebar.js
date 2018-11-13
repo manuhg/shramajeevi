@@ -16,7 +16,7 @@ class Sidebar extends Component {
         {/* bg-light */}
         <div className="row">
           <div className="col-12 text-center text-black">
-            <h3>Shramajeevi's Online Presence</h3>
+            <h3>Online Presence of Shramajeevi</h3>
           </div>
         </div>
         <br />
