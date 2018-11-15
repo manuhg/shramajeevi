@@ -13,35 +13,41 @@ import KSDA from 'img/clients/KSDA.jpg';
 import Kuvempu from 'img/clients/Kuvempu.jpg';
 import Mathana from 'img/clients/Mathana.jpg';
 import NAIP from 'img/clients/NAIP.jpg';
+import NIANP from 'img/clients/NIANP.jpg';
 import Oleo_Mac from 'img/clients/Oleo-Mac.jpg';
 import RIPL from 'img/clients/RIPL.jpg';
 import signalchip from 'img/clients/signalchip-innovations.png';
 import STIHL from 'img/clients/STIHL.jpg';
+import Honda from 'img/clients/Honda.jpg';
+import Suntec from 'img/clients/Suntec.jpg';
 import UAS_Dharwad from 'img/clients/UAS Dharwad.jpg';
 import UAS_Raichur from 'img/clients/UAS Raichur.jpg';
 
 const clients = [
-  [Agrimart, 'Agrimart', ''],
-  [Agrimate, 'Agrimate', ''],
   [CPDO_TI, 'CPDO&TI', ''],
-  [CWS, 'Centre for World Solidarity', ''],
-  [Gujarat_Eco, 'Gujrat Eco', ''],
   [ICAR, 'ICAR', ''],
-  [ICCOA, 'ICCOA', ''],
-  [IIHR, 'Insdian Institute of Horticulture Research', ''],
   [KBB, 'Karnataka Bio diversity Board', ''],
-  [Koppert, 'Koppert Biologicals', ''],
-  [Krishi_Suchak, 'Krishi Suchak', ''],
-  [KSDA, 'KSDA', ''],
-  [Kuvempu, 'Kuvempu University', ''],
-  [Mathana, 'Mathana Home Industries', ''],
+  [IIHR, 'Insdian Institute of Horticulture Research', ''],
   [NAIP, 'NAIP', ''],
-  [Oleo_Mac, 'Oleo Mac', ''],
-  [RIPL, 'Ratnagiri Impex Pvt Ltd.', ''],
-  [signalchip, 'Signalchip Innovation', ''],
-  [STIHL, 'Andreas Stihl', ''],
+  [NIANP, 'NIANP', ''],
+  [KSDA, 'KSDA', ''],
   [UAS_Dharwad, 'University of Agriculture Sciences, Dharwad', ''],
   [UAS_Raichur, 'University of Agriculture Sciences, Raichur', ''],
+  [Kuvempu, 'Kuvempu University', ''],
+  [CWS, 'Centre for World Solidarity', ''],
+  [ICCOA, 'ICCOA', ''],
+  [RIPL, 'Ratnagiri Impex Pvt Ltd.', ''],
+  [Agrimart, 'Agrimart', ''],
+  [Agrimate, 'Agrimate', ''],
+  [Oleo_Mac, 'Oleo Mac', ''],
+  [STIHL, 'Andreas Stihl', ''],
+  [Suntec, 'Suntec', ''],
+  [Honda, 'Honda', ''],
+  [Koppert, 'Koppert Biologicals', ''],
+  [Gujarat_Eco, 'Gujrat Eco', ''],
+  [Krishi_Suchak, 'Krishi Suchak', ''],
+  [Mathana, 'Mathana Home Industries', ''],
+  [signalchip, 'Signalchip Innovation', ''],
 ];
 
 export default clients;

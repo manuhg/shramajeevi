@@ -17,10 +17,10 @@ class Contact extends Component {
               <div className="row">
                 <div className="col-md-8 offset-md-2">
                   <p>
-                    Shramajeevi, # 009, Shrinilayam 3, Near Bandematha, Kommaghatta Main Road, Kengeri Satellite Town,
+                    Shramajeevi, #009, Shrinilayam 3, Near Bandematha, Kommaghatta Main Road, Kengeri Satellite Town,
                     Bengaluru 560060, Karnataka, India. <br />
                     Mob: +91 9980534320.
-                    <br /> Email:
+                    <br /> Email:&nbsp;
                     <a href="mailto:team@shramajeeevi.com">team@shramajeeevi.com</a>
                   </p>
                 </div>
