@@ -21,7 +21,7 @@ class Contact extends Component {
                     Bengaluru 560060, Karnataka, India. <br />
                     Mob: +91 9980534320.
                     <br /> Email:&nbsp;
-                    <a href="mailto:team@shramajeeevi.com">team@shramajeeevi.com</a>
+                    <a href="mailto:team@shramajeevi.com">team@shramajeevi.com</a>
                   </p>
                 </div>
               </div>
