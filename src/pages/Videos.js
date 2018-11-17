@@ -33,7 +33,7 @@ class Videos extends Component {
 
             <div className="row text-center">
               <div className="col-12 fp">
-                <div style={{ padding: '5px' }} className="btn-group" role="group" aria-label="Basic example">
+                <div style={{ padding: '5px' }} className="btn-group" role="group" aria-label="languages">
                   <button
                     id="english"
                     onClick={e => this.setLanguageIndex(0)}
