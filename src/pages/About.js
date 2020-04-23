@@ -55,7 +55,7 @@ class About extends Component {
                   <u>shramajeeviimages.com</u>
                 </a>{' '}
                 and for knowledgeable agricultural articles –{' '}
-                <a href="shramajeewiki.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://shramajeewiki.com" target="_blank" rel="noopener noreferrer">
                   <u>shramajeewiki.com</u>
                 </a>
                 .{' '}
