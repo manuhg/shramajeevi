@@ -22,8 +22,16 @@ class Home extends Component {
             <div className="row">
               <div className="col-12 text-center mzpz">
                 <img src={logo} style={{ height: '120px' }} alt="Shramajeevi" />
-                <h2>Digital Platform for Agriculture</h2>
-                <h5>Since 2004</h5>
+                <h1>Shramajeevi TV</h1>
+                <h2>Shramajeevi Television Private Limited</h2>
+                <br />
+                <h4>Download FarmTV app </h4>
+                <a
+                  className={'google_play_url'}
+                  href={'https://play.google.com/store/apps/details?id=com.shramajeevi.farmtv'}
+                >
+                  https://play.google.com/store/apps/details?id=com.shramajeevi.farmtv
+                </a>
               </div>
             </div>
             {/*<div style={{ width: '100%' }} className="row fp">

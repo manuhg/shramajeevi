@@ -25,8 +25,8 @@ class App extends Component {
         <Home />
         <Sidebar />
         <About />
-        <Clients />
-        <Videos />
+        {/*<Clients />*/}
+        {/*<Videos />*/}
         <Contact />
         <Footer />
       </div>

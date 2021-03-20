@@ -78,6 +78,9 @@
   background-color: rgb(177, 92, 13);
   color: rgb(255, 255, 255);
 }
+google_play_url {
+  color: blue !important;
+}
 a {
   text-decoration: none !important;
 }

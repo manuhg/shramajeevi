@@ -16,21 +16,25 @@ class About extends Component {
           <div className="row">
             <div className="col-10 offset-1 text-justify">
               <p>
-                SHRAMAJEEVI is a visual media production house dedicated to agriculture. Produces educative, technical
-                and practically applicable agricultural video documentaries. It was established in the year 2004 as
-                Shramajeevi Agri Films (SAF), a proprietary firm. It produced hundreds of agricultural documentaries,
-                corporate films, ads, jingles etc. in many languages. Shramajeevi has worked for either agriculture or
-                general AV projects of Agricultural Universities, Research Organizations, Government Departments and
-                Boards, NGOs, Corporate companies and others. Shramajeevi has an in-house team of agricultural media
-                professionals for script writing, translation, voice over and other post-production works of visual
-                media. Shramajeevi has all necessary technical infrastructure and a huge visual database to produce any
-                kind of audio and video film
+                Shramajeevi Television Private Limited is a visual media (TV) company dedicated to content making on
+                various aspects of agriculture and allied subjects. Shramajeevi is the pioneer of making scientific and
+                professional agriculture video content in India. Since 2004 (as Shramajeevi Agri Films) it has produced
+                hundreds of agricultural documentaries, short films, corporate films, TV commercials, Testimonials,
+                Jingles etc. in Kannada, English, Hindi, and other languages of India.
               </p>
               <p>
-                Shramajeevi has shared its contents with many media houses and TV channels in India and abroad.
-                Organizations from Kenya, Afghanistan, Hong-Kong, South Korea, Japan, Nepal, USA, Sri Lanka, Zambia etc.
-                have used Shramajeevi content for their telecast or training. From 2012 Shramajeevi videos are available
-                on its 3 popular YouTube channels –{' '}
+                Shramajeevi has launched an OTT App – <b>FarmTV</b>, to facilitate watching agricultural programs of{' '}
+                <b>Shramajeevi TV</b>. Both the App and the programs are absolutely free for the users. Shramajeevi TV
+                broadcasts two hours daily live content in Kannada, to begin with, and the duration will expand in the
+                future. In the second phase Shramajeevi will enter other languages. Right now, the programs are
+                available only on <b>FarmTV OTT App</b> and not on regular distribution platforms such as DTH and
+                Cables.
+              </p>
+              <p>
+                Over the years, Shramajeevi has shared its content with many media houses and TV channels in India and
+                abroad. Organizations from Kenya, Afghanistan, Hong-Kong, South Korea, Japan, Nepal, USA, Zambia, Sri
+                Lanka, Bangladesh etc. have used Shramajeevi’s content for their telecast or training. Since 2012,
+                Shramajeevi is popular on YouTube with its channels –{' '}
                 <a href="https://www.youtube.com/user/ShramajeeviAgriFilms" target="_blank" rel="noopener noreferrer">
                   <u>Shramajeevi TV</u>
                 </a>
@@ -61,24 +65,13 @@ class About extends Component {
                 .{' '}
               </p>
               <p>
-                {' '}
-                In the year 2016, Shramajeevi Television Private Limited, a private company was registered. The main
-                purpose is to launch 24x7 satellite TV channel dedicated to agriculture in Kannada, to begin with and
-                also to establish IT & mass-media based agriculture knowledge & communication ecosystem. STPL works in
-                coordination with many agricultural universities and agriculture research institutes of India, various
-                departments of the central and state governments, agriculture corporate companies, farmers and other
-                stakeholders of agriculture for content development.
-              </p>
-              <p>
                 Shramajeevi is led by its Founder and CMD DR. Venkatramana Hegde. He is basically a farmer, an
-                agriculture graduate, writer and visual media professional. Earlier he served as head of Annadata
-                program of ETV Kannada at Ramoji Film City, Hyderabad and as nonfiction producer at Kasturi TV
-                Bengaluru. Now, DR. Hegde, as CMD, looks after all agricultural technical issues at Shramajeevi for all
-                its projects.
+                agriculture science graduate, writer, and visual media professional. Earlier he served as producer for
+                ETV Kannada Annadata at RFC, Hyderabad and Kasturi TV Bengaluru.
               </p>
               <p>
                 <b>Vision:</b> To become one stop solution for all needs of farmers and other stakeholders of farming
-                and to harvest IT & Mass media tools to their potential to benefit farming sector.{' '}
+                and to harvest IT & Mass media tools to their potential to benefit farming sector of India.{' '}
               </p>
               <p>
                 <b>Mission:</b> To make farming competitive, sustainable, profitable and a respected profession.
@@ -90,4 +83,5 @@ class About extends Component {
     );
   }
 }
+
 export default About;

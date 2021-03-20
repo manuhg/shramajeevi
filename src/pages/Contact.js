@@ -17,8 +17,9 @@ class Contact extends Component {
               <div className="row">
                 <div className="col-md-8 offset-md-2">
                   <p>
-                    Shramajeevi, #009, Shrinilayam 3, Near Bandematha, Kommaghatta Main Road, Kengeri Satellite Town,
-                    Bengaluru 560060, Karnataka, India. <br />
+                    Shramajeevi Television Private Limited , No. 1108, 1st Floor, 1st Main, 4th Cross, Next to LIC,
+                    Kengeri Satellite Town, Bengaluru 560060, Karnataka, India
+                    <br />
                     Mob: +91 9980534320.
                     <br /> Email:&nbsp;
                     <a href="mailto:team@shramajeevi.com">team@shramajeevi.com</a>

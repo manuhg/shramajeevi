@@ -8,7 +8,7 @@ class Footer extends Component {
         <p>
           &copy;
           {new Date().getFullYear()}
-          &nbsp; Shramajeevi Agri Films | All Rights Reserved
+          &nbsp; Shramajeevi Television Private Limited | All Rights Reserved
         </p>
         {/* <div className="container-fluid">
           <p className="float-left">
